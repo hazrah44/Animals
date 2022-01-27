@@ -12,13 +12,23 @@ package com.animal;
 //Show the relevant code (only) and explain why upcasting or downcasting is appropriate here. It should be clear where the code is located (class and method).
 public class Leopard extends Animals {
 	public Leopard () {
-		super();
+		
 	}
-	public void talk() {
-		System.out.println("Growl");
-	}
-	public String toString() {
-		return "Leopard";
-	}
+	public Leopard(String name) {
+        super(name);
+    }
+
+    @Override
+    public String noise() {
+
+        return "grownl";
+    }
+
+    @Override
+    public String toString() {
+
+        return getName() + " sound is: " + noise();
+
+    }
 
 }

@@ -14,20 +14,23 @@ package com.animal;
 //superclass animals for alpaca
 public class Alpaca extends Animals {
 	public Alpaca() {
-		super();
+		
 	}
-	public void talk() {
-		//Reference: https://en.wikipedia.org/wiki/List_of_animal_sounds
-		System.out.println("Cluck");
-	}
-	public void timePasses() {
-		super.timePasses();
-		if (super.getHunger() >= 3) {
-			//Reference: https://en.wikipedia.org/wiki/List_of_animal_sounds
-			System.out.println("The alpaca paces hungrily and Scream!!!!!!");
-		}
-	}
-	public String toString() {
-		return "Alpaca";
-	}
+	public Alpaca(String name) {
+        super(name);
+    }
+
+    @Override
+    public String noise() {
+
+        return "Cluck";
+    }
+
+    @Override
+    public String toString() {
+
+        return getName() + " sound is: " + noise();
+
+    }
+
 }
