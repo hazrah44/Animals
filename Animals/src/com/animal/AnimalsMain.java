@@ -48,19 +48,19 @@ public class AnimalsMain {
 
                 case 1:
                 	 // do something...
-                      System.out.print("You've chosen Alpaca, " + " " + alpaca + "\n" );
+                      System.out.print("You've chosen Sophie the Alpaca, " + " " + alpaca + "\n" );
                       System.out.println();
                       break;
 
                 case 2:
                 	 // do something...
-                      System.out.println("You've chosen item Antelope, " + " " + antelope);
+                      System.out.println("You've chosen Lily the Antelope, " + " " + antelope);
                      
                       break;
 
                 case 3:
 
-                      System.out.println("You've chosen item Leopard, " +" " + leopard);
+                      System.out.println("You've chosen Thomas the Leopard, " +" " + leopard);
 
                       // do something...
 
@@ -68,7 +68,7 @@ public class AnimalsMain {
 
                 case 4:
 
-                      System.out.println("You've chosen item is not available and please try again");
+                      System.out.println("You've chosen animals is not available and please try again");
 
                       // do something...
 
@@ -76,7 +76,7 @@ public class AnimalsMain {
 
                 case 5:
 
-                      System.out.println("You've chosen item is not available and please try again");
+                      System.out.println("You've chosen animals is not available and please try again");
 
                       // do something...
 
