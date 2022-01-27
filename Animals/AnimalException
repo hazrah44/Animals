@@ -1,0 +1,40 @@
+package com.animal;
+
+
+
+public class AnimalException {
+
+	public static void main(String[] args)
+	   {
+	      try
+	      {
+	          animals();
+	      }
+	       catch(Exception ex)
+	       {
+	         System.out.println("Exception caught and processed in main()");
+	         ex.printStackTrace();
+	       }
+	       System.out.println("The part after exception executed in main()");      
+	   }
+
+	   public static void animals() throws Exception  
+	   {
+	      try
+	      {
+	        animals(555);
+	      }
+	      catch (Exception ex)
+	      {
+	        throw new Exception("Excep from animal1", ex); // chained exception
+	      } 
+	   } 
+
+	   public static void animals(int i)  throws Exception                                            
+	   {
+	      if (i > 0)
+	        throw new Exception("Excep from animal2");
+
+	      System.out.println("Unreachable if excep thrown in animal2()");
+	   }
+}
