@@ -1,7 +1,0 @@
-Cattle
-Dog
-Donkey
-Goat
-Guinea pig
-Horse
-Pig
